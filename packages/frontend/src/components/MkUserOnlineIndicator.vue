@@ -5,7 +5,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 
 <template>
 <div
-	v-if="user.onlineStatus === 'unknown'"
+	v-if="user.onlineStatus !== 'unknown'"
 	v-tooltip="text"
 	:class="[$style.root, {
 		[$style.status_online]: user.onlineStatus === 'online',
